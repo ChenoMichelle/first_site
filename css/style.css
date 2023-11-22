@@ -1,0 +1,110 @@
+/*Navigation Bar*/
+
+
+
+nav ul{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #372c2a;
+  display: flex;
+  justify-content: space-between;  
+
+}
+
+
+nav li{
+
+  flex: 1;
+    text-align: center;
+  float: left
+
+}
+
+nav li a{
+
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+nav li a:hover {
+  background-color: #584845;
+}
+
+body{
+
+  background-color: #97908e;
+
+}
+
+p {
+  padding: 15px;
+  border: 5px double #3a3a3a; /* Change this color if needed */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  background-color: #f7f7f7; /* Light background to contrast the border. Change if needed */
+  transition: all 0.3s ease-in-out; /* Smoothens the hover effect */
+}
+
+p{
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px); /* Gives a slight lift when hovered */
+}
+
+#hop {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#hop:focus {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #000;
+  z-index: 1000;
+}
+
+.page-wrapper {
+  padding: 0;
+  margin: 0 auto;
+  width: 1000px;
+  text-align: left;
+  overflow: auto;
+}
+
+.date-time-display {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee; /* Or any color that fits your design */
+  color: #333; /* Text color */
+  margin-bottom: 15px;
+}
+
+body {
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
